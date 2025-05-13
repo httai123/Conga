@@ -1,0 +1,622 @@
+[
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b91"
+    },
+    "dataType": "Integer",
+    "code": "equalTo",
+    "name": "Bằng",
+    "sqlOperator": "=",
+    "mapping": "{col_name} = {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b92"
+    },
+    "dataType": "Integer",
+    "code": "notEqualTo",
+    "name": "Khác",
+    "sqlOperator": "!=",
+    "mapping": "{col_name} != {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b93"
+    },
+    "dataType": "Integer",
+    "code": "greaterThan",
+    "name": "Lớn hơn",
+    "sqlOperator": ">",
+    "mapping": "{col_name} > {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b94"
+    },
+    "dataType": "Integer",
+    "code": "lessThan",
+    "name": "Nhỏ hơn",
+    "sqlOperator": "<",
+    "mapping": "{col_name} < {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b95"
+    },
+    "dataType": "Integer",
+    "code": "greaterThanOrEqualTo",
+    "name": "Lớn hơn hoặc bằng",
+    "sqlOperator": ">=",
+    "mapping": "{col_name} >= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b96"
+    },
+    "dataType": "Integer",
+    "code": "lessThanOrEqualTo",
+    "name": "Nhỏ hơn hoặc bằng",
+    "sqlOperator": "<=",
+    "mapping": "{col_name} <= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b97"
+    },
+    "dataType": "Integer",
+    "code": "exists",
+    "name": "Tồn tại",
+    "sqlOperator": "IS NOT NULL",
+    "mapping": "{col_name} IS NOT NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b98"
+    },
+    "dataType": "Integer",
+    "code": "notExists",
+    "name": "Không tồn tại",
+    "sqlOperator": "IS NULL",
+    "mapping": "{col_name} IS NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b99"
+    },
+    "dataType": "Long",
+    "code": "equalTo",
+    "name": "Bằng",
+    "sqlOperator": "=",
+    "mapping": "{col_name} = {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b9a"
+    },
+    "dataType": "Long",
+    "code": "notEqualTo",
+    "name": "Khác",
+    "sqlOperator": "!=",
+    "mapping": "{col_name} != {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b9b"
+    },
+    "dataType": "Long",
+    "code": "greaterThan",
+    "name": "Lớn hơn",
+    "sqlOperator": ">",
+    "mapping": "{col_name} > {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b9c"
+    },
+    "dataType": "Long",
+    "code": "lessThan",
+    "name": "Nhỏ hơn",
+    "sqlOperator": "<",
+    "mapping": "{col_name} < {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b9d"
+    },
+    "dataType": "Long",
+    "code": "greaterThanOrEqualTo",
+    "name": "Lớn hơn hoặc bằng",
+    "sqlOperator": ">=",
+    "mapping": "{col_name} >= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b9e"
+    },
+    "dataType": "Long",
+    "code": "lessThanOrEqualTo",
+    "name": "Nhỏ hơn hoặc bằng",
+    "sqlOperator": "<=",
+    "mapping": "{col_name} <= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91b9f"
+    },
+    "dataType": "Long",
+    "code": "exists",
+    "name": "Tồn tại",
+    "sqlOperator": "IS NOT NULL",
+    "mapping": "{col_name} IS NOT NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba0"
+    },
+    "dataType": "Long",
+    "code": "notExists",
+    "name": "Không tồn tại",
+    "sqlOperator": "IS NULL",
+    "mapping": "{col_name} IS NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba1"
+    },
+    "dataType": "Float",
+    "code": "equalTo",
+    "name": "Bằng",
+    "sqlOperator": "=",
+    "mapping": "{col_name} = {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba2"
+    },
+    "dataType": "Float",
+    "code": "notEqualTo",
+    "name": "Khác",
+    "sqlOperator": "!=",
+    "mapping": "{col_name} != {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba3"
+    },
+    "dataType": "Float",
+    "code": "greaterThan",
+    "name": "Lớn hơn",
+    "sqlOperator": ">",
+    "mapping": "{col_name} > {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba4"
+    },
+    "dataType": "Float",
+    "code": "lessThan",
+    "name": "Nhỏ hơn",
+    "sqlOperator": "<",
+    "mapping": "{col_name} < {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba5"
+    },
+    "dataType": "Float",
+    "code": "greaterThanOrEqualTo",
+    "name": "Lớn hơn hoặc bằng",
+    "sqlOperator": ">=",
+    "mapping": "{col_name} >= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba6"
+    },
+    "dataType": "Float",
+    "code": "lessThanOrEqualTo",
+    "name": "Nhỏ hơn hoặc bằng",
+    "sqlOperator": "<=",
+    "mapping": "{col_name} <= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba7"
+    },
+    "dataType": "Float",
+    "code": "exists",
+    "name": "Tồn tại",
+    "sqlOperator": "IS NOT NULL",
+    "mapping": "{col_name} IS NOT NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba8"
+    },
+    "dataType": "Float",
+    "code": "notExists",
+    "name": "Không tồn tại",
+    "sqlOperator": "IS NULL",
+    "mapping": "{col_name} IS NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91ba9"
+    },
+    "dataType": "Double",
+    "code": "equalTo",
+    "name": "Bằng",
+    "sqlOperator": "=",
+    "mapping": "{col_name} = {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91baa"
+    },
+    "dataType": "Double",
+    "code": "notEqualTo",
+    "name": "Khác",
+    "sqlOperator": "!=",
+    "mapping": "{col_name} != {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bab"
+    },
+    "dataType": "Double",
+    "code": "greaterThan",
+    "name": "Lớn hơn",
+    "sqlOperator": ">",
+    "mapping": "{col_name} > {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bac"
+    },
+    "dataType": "Double",
+    "code": "lessThan",
+    "name": "Nhỏ hơn",
+    "sqlOperator": "<",
+    "mapping": "{col_name} < {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bad"
+    },
+    "dataType": "Double",
+    "code": "greaterThanOrEqualTo",
+    "name": "Lớn hơn hoặc bằng",
+    "sqlOperator": ">=",
+    "mapping": "{col_name} >= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bae"
+    },
+    "dataType": "Double",
+    "code": "lessThanOrEqualTo",
+    "name": "Nhỏ hơn hoặc bằng",
+    "sqlOperator": "<=",
+    "mapping": "{col_name} <= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91baf"
+    },
+    "dataType": "Double",
+    "code": "exists",
+    "name": "Tồn tại",
+    "sqlOperator": "IS NOT NULL",
+    "mapping": "{col_name} IS NOT NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb0"
+    },
+    "dataType": "Double",
+    "code": "notExists",
+    "name": "Không tồn tại",
+    "sqlOperator": "IS NULL",
+    "mapping": "{col_name} IS NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb1"
+    },
+    "dataType": "Decimal",
+    "code": "equalTo",
+    "name": "Bằng",
+    "sqlOperator": "=",
+    "mapping": "{col_name} = {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb2"
+    },
+    "dataType": "Decimal",
+    "code": "notEqualTo",
+    "name": "Khác",
+    "sqlOperator": "!=",
+    "mapping": "{col_name} != {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb3"
+    },
+    "dataType": "Decimal",
+    "code": "greaterThan",
+    "name": "Lớn hơn",
+    "sqlOperator": ">",
+    "mapping": "{col_name} > {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb4"
+    },
+    "dataType": "Decimal",
+    "code": "lessThan",
+    "name": "Nhỏ hơn",
+    "sqlOperator": "<",
+    "mapping": "{col_name} < {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb5"
+    },
+    "dataType": "Decimal",
+    "code": "greaterThanOrEqualTo",
+    "name": "Lớn hơn hoặc bằng",
+    "sqlOperator": ">=",
+    "mapping": "{col_name} >= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb6"
+    },
+    "dataType": "Decimal",
+    "code": "lessThanOrEqualTo",
+    "name": "Nhỏ hơn hoặc bằng",
+    "sqlOperator": "<=",
+    "mapping": "{col_name} <= {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb7"
+    },
+    "dataType": "Decimal",
+    "code": "exists",
+    "name": "Tồn tại",
+    "sqlOperator": "IS NOT NULL",
+    "mapping": "{col_name} IS NOT NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb8"
+    },
+    "dataType": "Decimal",
+    "code": "notExists",
+    "name": "Không tồn tại",
+    "sqlOperator": "IS NULL",
+    "mapping": "{col_name} IS NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bb9"
+    },
+    "dataType": "String",
+    "code": "equalTo",
+    "name": "Bằng",
+    "sqlOperator": "=",
+    "mapping": "{col_name} = {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bba"
+    },
+    "dataType": "String",
+    "code": "notEqualTo",
+    "name": "Khác",
+    "sqlOperator": "!=",
+    "mapping": "{col_name} != {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bbb"
+    },
+    "dataType": "String",
+    "code": "exists",
+    "name": "Tồn tại",
+    "sqlOperator": "IS NOT NULL",
+    "mapping": "{col_name} IS NOT NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bbc"
+    },
+    "dataType": "String",
+    "code": "notExists",
+    "name": "Không tồn tại",
+    "sqlOperator": "IS NULL",
+    "mapping": "{col_name} IS NULL {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bbd"
+    },
+    "dataType": "String",
+    "code": "like",
+    "name": "Bao gồm",
+    "sqlOperator": "LIKE",
+    "mapping": "{col_name} LIKE '%{value}%'"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bbe"
+    },
+    "dataType": "String",
+    "code": "notLike",
+    "name": "Không bao gồm",
+    "sqlOperator": "NOT LIKE",
+    "mapping": "{col_name} NOT LIKE '%{value}%'"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bbf"
+    },
+    "dataType": "Date",
+    "code": "equalTo",
+    "name": "Bằng",
+    "sqlOperator": "=",
+    "mapping": "DATE({col_name}) = {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc0"
+    },
+    "dataType": "Date",
+    "code": "notEqualTo",
+    "name": "Khác",
+    "sqlOperator": "!=",
+    "mapping": "DATE({col_name}) != {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc1"
+    },
+    "dataType": "Date",
+    "code": "greaterThan",
+    "name": "Lớn hơn",
+    "sqlOperator": ">",
+    "mapping": "DATE({col_name}) > date_add({value1}, INTERVAL {value2} DAY)"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc2"
+    },
+    "dataType": "Date",
+    "code": "lessThan",
+    "name": "Nhỏ hơn",
+    "sqlOperator": "<",
+    "mapping": "DATE({col_name}) < date_add({value1}, INTERVAL {value2} DAY)"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc3"
+    },
+    "dataType": "Date",
+    "code": "greaterThanOrEqualTo",
+    "name": "Lớn hơn hoặc bằng",
+    "sqlOperator": ">=",
+    "mapping": "DATE({col_name}) >= date_add({value1}, INTERVAL {value2} DAY)"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc4"
+    },
+    "dataType": "Date",
+    "code": "lessThanOrEqualTo",
+    "name": "Nhỏ hơn hoặc bằng",
+    "sqlOperator": "<=",
+    "mapping": "DATE({col_name}) <= date_add({value1}, INTERVAL {value2} DAY)"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc5"
+    },
+    "dataType": "Date",
+    "code": "exists",
+    "name": "Tồn tại",
+    "sqlOperator": "IS NOT NULL",
+    "mapping": "{col_name} IS NOT NULL"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc6"
+    },
+    "dataType": "Date",
+    "code": "notExists",
+    "name": "Không tồn tại",
+    "sqlOperator": "IS NULL",
+    "mapping": "{col_name} IS NULL"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc7"
+    },
+    "dataType": "Timestamp",
+    "code": "equalTo",
+    "name": "Bằng",
+    "sqlOperator": "=",
+    "mapping": "timestamp({col_name}) = {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc8"
+    },
+    "dataType": "Timestamp",
+    "code": "notEqualTo",
+    "name": "Khác",
+    "sqlOperator": "!=",
+    "mapping": "timestamp({col_name}) != {value}"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bc9"
+    },
+    "dataType": "Timestamp",
+    "code": "greaterThan",
+    "name": "Lớn hơn",
+    "sqlOperator": ">",
+    "mapping": "timestamp({col_name}) > timestamp(from_unixtime(unix_timestamp({value1}, '%Y-%m-%d %H:%i:%s') + {value2}))"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bca"
+    },
+    "dataType": "Timestamp",
+    "code": "lessThan",
+    "name": "Nhỏ hơn",
+    "sqlOperator": "<",
+    "mapping": "timestamp({col_name}) < timestamp(from_unixtime(unix_timestamp({value1}, '%Y-%m-%d %H:%i:%s') + {value2}))"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bcb"
+    },
+    "dataType": "Timestamp",
+    "code": "greaterThanOrEqualTo",
+    "name": "Lớn hơn hoặc bằng",
+    "sqlOperator": ">=",
+    "mapping": "timestamp({col_name}) >= timestamp(from_unixtime(unix_timestamp({value1}, '%Y-%m-%d %H:%i:%s') + {value2}))"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bcc"
+    },
+    "dataType": "Timestamp",
+    "code": "lessThanOrEqualTo",
+    "name": "Nhỏ hơn hoặc bằng",
+    "sqlOperator": "<=",
+    "mapping": "timestamp({col_name}) <= timestamp(from_unixtime(unix_timestamp({value1}, '%Y-%m-%d %H:%i:%s') + {value2}))"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bcd"
+    },
+    "dataType": "Timestamp",
+    "code": "exists",
+    "name": "Tồn tại",
+    "sqlOperator": "IS NOT NULL",
+    "mapping": "{col_name} IS NOT NULL"
+  },
+  {
+    "_id": {
+      "$oid": "6719a2746c922a4eb3c91bce"
+    },
+    "dataType": "Timestamp",
+    "code": "notExists",
+    "name": "Không tồn tại",
+    "sqlOperator": "IS NULL",
+    "mapping": "{col_name} IS NULL"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "logical": "AND",
+  "attributeRules": [
+    {
+      "source": "BI",
+      "table": "C360_FLAT_SERVICES",
+      "attribute": "cal_internet_television_count_sms_received_weekly",
+      "operator": {
+        "code": "lessThan",
+        "value": "<",
+        "dataType": "Long"
+      },
+      "timeRange": {
+        "attribute": "PARTITION_WEEK",
+        "frequency": "WEEKLY",
+        "frequencyType": "RELA",
+        "value": [
+          -3,
+          0
+        ]
+      },
+      "frequencyType": "EXISTS",
+      "value": [
+        "4"
+      ]
+    },
+    {
+      "source": "BI",
+      "table": "C360_FLAT_SERVICES",
+      "attribute": "cal_internet_television_count_all_interactive_weekly",
+      "operator": {
+        "code": "greaterThanOrEqualTo",
+        "value": ">=",
+        "dataType": "Long"
+      },
+      "timeRange": {
+        "attribute": "PARTITION_WEEK",
+        "frequency": "WEEKLY",
+        "frequencyType": "RELA",
+        "value": [
+          -3,
+          0
+        ]
+      },
+      "frequencyType": "EXISTS",
+      "value": [
+        "10"
+      ]
+    }
+  ]
+}

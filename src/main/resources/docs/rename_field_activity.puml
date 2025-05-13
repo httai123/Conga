@@ -1,0 +1,20 @@
+@startuml
+start
+:loop qua agg;
+repeat
+    :tạo map alias -> id agg;
+repeat while (còn agg);
+:loop qua filter;
+repeat
+    switch (kiểu trường)
+        case (agg)
+            :lấy id agg làm tên bảng;
+        case (field)
+            :tên subquery = tên bảng + date;
+            :tên trường là id của tên field + tên subquery;
+    endswitch
+: Tạo map id -> tên trường mới;
+: Tạo map tên trường trường-> list id;
+: Tạo map tên subquery -> list trường;
+: Tạo map tên trường -> subquery;
+@enduml

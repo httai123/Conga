@@ -1,0 +1,219 @@
+{
+  "logical": "AND",
+  "autoRules": [
+    {
+      "logical": "OR",
+      "autoRules": [
+        {
+          "logical": "AND",
+          "attributeRules": [
+            {
+              "source": "BI",
+              "table": "C360_FLAT_SERVICES",
+              "attribute": "cal_tuition_count_sms_received_monthly",
+              "operator": {
+                "code": "greaterThanOrEqualTo",
+                "value": ">=",
+                "dataType": "Long"
+              },
+              "timeRange": {
+                "attribute": "PARTITION_MONTH",
+                "frequency": "MONTHLY",
+                "frequencyType": "RELA",
+                "value": [
+                  -3,
+                  0
+                ]
+              },
+              "frequencyType": "EXISTS",
+              "value": [
+                "10"
+              ]
+            },
+            {
+              "source": "BI",
+              "table": "C360_FLAT_SERVICES",
+              "attribute": "datetime_tuition_lastest_potential_moment_sms_monthly",
+              "operator": {
+                "code": "notEqualTo",
+                "value": ">=",
+                "dataType": "Timestamp"
+              },
+              "timeRange": {
+                "attribute": "PARTITION_MONTH",
+                "frequency": "MONTHLY",
+                "frequencyType": "RELA",
+                "value": [
+                  -3,
+                  0
+                ]
+              },
+              "frequencyType": "EXISTS",
+              "value": [
+                "-45"
+              ]
+            }
+          ]
+        },
+        {
+          "logical": "AND",
+          "attributeRules": [
+            {
+              "source": "BI",
+              "table": "C360_FLAT_SERVICES",
+              "attribute": "date_tuition_next_bill_monthly",
+              "operator": {
+                "code": "lessThanOrEqualTo",
+                "value": "<=",
+                "dataType": "Date"
+              },
+              "timeRange": {
+                "attribute": "PARTITION_MONTH",
+                "frequency": "MONTHLY",
+                "frequencyType": "RELA",
+                "value": [
+                  -3,
+                  0
+                ]
+              },
+              "frequencyType": "EXISTS",
+              "value": [
+                "-45"
+              ]
+            },
+            {
+              "source": "BI",
+              "table": "C360_FLAT_SERVICES",
+              "attribute": "amount_sum_tuition_next_bill_monthly",
+              "operator": {
+                "code": "greaterThan",
+                "value": ">",
+                "dataType": "Long"
+              },
+              "timeRange": {
+                "attribute": "PARTITION_MONTH",
+                "frequency": "MONTHLY",
+                "frequencyType": "RELA",
+                "value": [
+                  -3,
+                  0
+                ]
+              },
+              "frequencyType": "EXISTS",
+              "value": [
+                "5000"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "logical": "OR",
+      "autoRules": [
+        {
+          "logical": "AND",
+          "attributeRules": [
+            {
+              "source": "BI",
+              "table": "C360_FLAT_SERVICES",
+              "attribute": "datetime_tuition_lastest_potential_moment_evt_monthly",
+              "operator": {
+                "code": "notEqualTo",
+                "value": ">=",
+                "dataType": "Timestamp"
+              },
+              "timeRange": {
+                "attribute": "PARTITION_MONTH",
+                "frequency": "MONTHLY",
+                "frequencyType": "RELA",
+                "value": [
+                  -3,
+                  0
+                ]
+              },
+              "frequencyType": "EXISTS",
+              "value": [
+                "-45"
+              ]
+            },
+            {
+              "source": "BI",
+              "table": "C360_FLAT_SERVICES",
+              "attribute": "cal_tuition_count_urlopen_monthly",
+              "operator": {
+                "code": "greaterThanOrEqualTo",
+                "value": ">=",
+                "dataType": "Long"
+              },
+              "timeRange": {
+                "attribute": "PARTITION_MONTH",
+                "frequency": "MONTHLY",
+                "frequencyType": "RELA",
+                "value": [
+                  -3,
+                  0
+                ]
+              },
+              "frequencyType": "EXISTS",
+              "value": [
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "logical": "AND",
+          "attributeRules": [
+            {
+              "source": "BI",
+              "table": "C360_FLAT_SERVICES",
+              "attribute": "datetime_tuition_lastest_potential_moment_url_monthly",
+              "operator": {
+                "code": "notEqualTo",
+                "value": "<=",
+                "dataType": "Date"
+              },
+              "timeRange": {
+                "attribute": "PARTITION_MONTH",
+                "frequency": "MONTHLY",
+                "frequencyType": "RELA",
+                "value": [
+                  -3,
+                  0
+                ]
+              },
+              "frequencyType": "EXISTS",
+              "value": [
+                "-45"
+              ]
+            },
+            {
+              "source": "BI",
+              "table": "C360_FLAT_SERVICES",
+              "attribute": "cal_tuition_count_evt_monthly",
+              "operator": {
+                "code": "greaterThanOrEqualTo",
+                "value": ">=",
+                "dataType": "Long"
+              },
+              "timeRange": {
+                "attribute": "PARTITION_MONTH",
+                "frequency": "MONTHLY",
+                "frequencyType": "RELA",
+                "value": [
+                  -3,
+                  0
+                ]
+              },
+              "frequencyType": "EXISTS",
+              "value": [
+                "2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+module translator {
+    requires json.simple;
+    requires static lombok;
+    requires dao;
+    requires entities;
+    requires org.apache.commons.lang3;
+    requires org.apache.commons.io;
+    requires com.fasterxml.jackson.databind;
+    requires jdk.compiler;
+    requires org.jgrapht.ext;
+    requires java.desktop;
+    requires spring.context;
+    requires spring.beans;
+    requires spring.jdbc;
+    requires java.sql;
+    requires org.hibernate.orm.core;
+    exports com.viettel.vds.cdp.translator;
+    opens com.viettel.vds.cdp.translator;
+    exports com.viettel.vds.cdp.translator.controllers.dto;
+    exports com.viettel.vds.cdp.translator.model;
+    exports com.viettel.vds.cdp.translator.controllers;
+    exports com.viettel.vds.cdp.translator.model.field;
+    exports com.viettel.vds.cdp.translator.model.combination;
+    opens com.viettel.vds.cdp.translator.services.models.tree_models to org.jgrapht.core;
+    exports com.viettel.vds.cdp.translator.enums;
+    opens com.viettel.vds.cdp.translator.enums;
+}

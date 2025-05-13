@@ -1,0 +1,69 @@
+@startuml
+title Build query activity
+start
+rectangle "CreateData" {
+    :Nhận json;
+    :Đánh id các trường + agg;
+    :Đặt lại các tên các trường;
+    :Tạo map field -> subquery;
+    :Tạo map subquery -> list field;
+}
+switch (Kiểu parse)
+case (Thông thường)
+    rectangle "Transform Tree" {
+        :Thêm tiền tố subquery cho các trường;
+        :Tạo cây string condition;
+    }
+    rectangle "Build Subquery" {
+        :Subquery aggregation;
+        :Subquery dùng để projection các trường\n trong cùng 1 (bảng, thời gian);
+    }
+    rectangle "Build Final query" {
+        :Full outer Join toàn bộ subquery;
+        :Parse cây string condition sang WHERE;
+    }
+case (tối ưu)
+    rectangle "Transform Tree" {
+        :Xây dựng cây mệnh đề;
+        :DFS dựng hash cho từng node-\n list bảng mà mệnh đề cần truy vấn;
+        repeat
+            :Duyệt BFS merge các node;
+        repeat while (merged?) is (yes) not (no)
+    }
+    rectangle "Build Subquery" {
+        rectangle "Build basic subquery" {
+            :Subquery aggregation;
+            :Subquery dùng để projection các trường\n trong cùng 1 (bảng, thời gian);
+        }
+        rectangle "Build component subquery" {
+            repeat: Duyệt qua các node lá\n(mỗi node chừa nhiều condition):
+                :Tạo cây String condition;
+                :Full outer Join toàn bộ subquery;
+                switch (Chỉ chưa mệnh đề gồm aggregation?)
+                case (chỉ có aggration)
+                    :Dùng having;
+                case (còn lại)
+                    :Dùng where;
+                endswitch
+                :Hoàn thành subquery;
+            repeat while (Hết node lá?) is (yes) not (no)
+        }
+        rectangle "Build hierarchical subquery" {
+            repeat: Duyệt DFS;
+            switch (logical tại node cha)
+            case (AND)
+                :Dùng INNER JOIN;
+            case (OR)
+                :Dùng FULL OUTER JOIN;
+            endswitch
+            :Build subquery xử lý (AND) (OR);
+            repeat while (Còn node?) is (yes) not (no)
+        }
+    }
+    rectangle "Build Final query" {
+        :Lấy truy vấn cuối cùng được dựng;
+    }
+endswitch
+:Translate;
+stop
+@enduml
